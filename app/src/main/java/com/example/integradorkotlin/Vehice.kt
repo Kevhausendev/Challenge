@@ -2,13 +2,19 @@ package com.example.integradorkotlin
 
 import java.util.*
 
-data class Vehicle(val plate:String, val type:VehicleType, val discountCard :String? = null){
+/**
+ * @author: Kevin
+ * @param vehicle is an instance of Vehicle
+* */
+
+data class Vehicle(
+    val plate:String,
+    val type:VehicleType,
+    val checkInTime:Calendar,
+    val discountCard :String? = null){
 
 //    se podria poner el checkInTime como atributo? no se si es necesario pasarle el calendar.getinstance() cada vez
 //    val checkinTime = Calendar.getInstance()
-
-    val checkInTime = Calendar.getInstance()
-
 
     //    Function states that two Vehicles are equal if their plates are
     override fun equals(other: Any?): Boolean {

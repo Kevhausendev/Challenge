@@ -1,6 +1,6 @@
 package com.example.integradorkotlin
 
-enum class VehicleType(rate:Int) {
+enum class VehicleType(val rate:Int) {
     AUTO(20),
     MOTO(15),
     MINIBUS(25),
